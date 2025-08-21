@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+    int width, height;
+
+public:
+    Rectangle() {
+        width = 0;
+        height = 0;
+    }
+    Rectangle(int w) {
+        width = w;
+        height = w; 
+    }
+    Rectangle(int w, int h) {
+        width = w;
+        height = h;
+    }
+
+    void area() {
+		int area=height*width;
+		cout<< "Area is : "<<area<<endl;
+    }
+};
+
+int main() {
+    Rectangle r1;          
+    Rectangle r2(10);        
+    Rectangle r3(1,6);     
+
+    r1.area();
+    r2.area();
+    r3.area();
+
+    return 0;
+}
+
