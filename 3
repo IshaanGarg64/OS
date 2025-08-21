@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+class Rectangle{
+	public:
+		~Rectangle(){
+			cout<<"Destructor called"<<endl;
+		}
+};
+int main(){
+	{
+		Rectangle r1;
+	}
+	Rectangle* r2 = new Rectangle();  
+    delete r2;
+}
+
